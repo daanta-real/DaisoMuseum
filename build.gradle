@@ -25,14 +25,30 @@ repositories {
 }
 
 dependencies {
+
+	// Essentials
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'org.postgresql:postgresql'
+    implementation 'org.projectlombok:lombok'
+	implementation 'org.apache.commons:commons-lang3'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	//implementation 'org.slf4j:jcl-over-slf4j'
+    //implementation 'org.slf4j:slf4j-api'
+    implementation 'ch.qos.logback:logback-classic'
+    //implementation 'ch.qos.logback:logback-core:latest.integration'
+
+	// For only dev
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// Below are non-essentials
+
+	// DBMS
+	implementation 'org.postgresql:postgresql'
+
 }
 
 tasks.named('test') {
