@@ -16,7 +16,7 @@ public class DaisoMuseumController {
     @GetMapping({"", "index"})
     public String index() {
         log.debug("메인 화면 접속");
-        return "views/index"; ///WEB-INF/views/
+        return "index.html"; ///WEB-INF/views/
     }
     
 }

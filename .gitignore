@@ -1,6 +1,13 @@
 .gradle
+
+# 빌드된 파일
 **/build/
 !src/**/build/
+/bin/
+
+# 설정
+/.vscode/
+/src/main/resources/*.properties
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -19,3 +26,4 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
