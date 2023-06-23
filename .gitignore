@@ -8,6 +8,7 @@
 # 설정
 /.vscode/
 /src/main/resources/*.properties
+/gradle/
 
 # Ignore Gradle GUI config
 gradle-app.setting
