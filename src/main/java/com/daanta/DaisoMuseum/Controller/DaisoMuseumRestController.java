@@ -17,7 +17,8 @@ public class DaisoMuseumRestController {
     @GetMapping({"", "index"})
     public String index2() {
         log.debug("rest/index");
-        return "전시관";
+        String testResult = TestMapper.selectTest(555);
+        return "REST TEST: ";
     }
     
 }

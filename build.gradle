@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
 	id 'war'
-	id 'org.springframework.boot' version '3.0.8-SNAPSHOT'
+	id 'org.springframework.boot' version '3.1.1'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
 
@@ -30,11 +30,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.projectlombok:lombok'
 	implementation 'org.apache.commons:commons-lang3'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
-
 
 	//implementation 'org.slf4j:jcl-over-slf4j'
     //implementation 'org.slf4j:slf4j-api'
